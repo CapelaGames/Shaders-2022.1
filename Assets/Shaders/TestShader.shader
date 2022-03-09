@@ -21,8 +21,9 @@ Shader "Class/TestShader"
         }
         Pass
         {
-            
-            ZWrite Off
+            Cull Back // Which side of the triangle gets displayed
+            ZWrite Off //Write to the depth buffer or not
+            ZTest LEqual
             Blend One One //Additive blending
             
             //Blend DstColor Zero //Multiply blending
@@ -42,7 +43,7 @@ Shader "Class/TestShader"
                 float4 vertex : POSITION; //vertex position in OBJECT SPACE
                 float2 uv0 : TEXCOORD0; //uv0 diffuse/normal map textures UVs
                 //float2 uv1 : TEXCOORD1; //uv1 lightmap coordiantes
-               // float3 normal : NORMAL;
+                float3 normal : NORMAL;
                 //float4 tangent: TANGENT;
                 //float4 color : COLOR:
             };
@@ -52,7 +53,7 @@ Shader "Class/TestShader"
                 float4 vertex : SV_POSITION;
                 //the : tag thing is now just slots of data we can pass
                float2 uv : TEXCOORD0;
-              // float3 normal : TEXCOORD1;
+               float3 normal : TEXCOORD1;
                 //float3 slot2 : TEXCOORD2;
                 //float3 slot3 : TEXCOORD3;
                // float3 slot4 : TEXCOORD4;
@@ -81,7 +82,7 @@ Shader "Class/TestShader"
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = v.uv0; //TRANSFORM_TEX(v.uv, _MainTex);
-               // o.normal = UnityObjectToWorldNormal(v.normal);
+                o.normal = UnityObjectToWorldNormal(v.normal);
                 
                 return o;
             }
@@ -101,8 +102,13 @@ Shader "Class/TestShader"
                 float xOffset = cos( i.uv.x * TAU * 8 ) * 0.01;
                 float t = cos((i.uv.y + xOffset - _Time.y * 0.1) * TAU * 5) * 0.5 + 0.5;
                 t *= 1 - i.uv.y; //fade
+
+                bool topBottomRemover = abs(i.normal.y) < 0.999;
+                float waves = t * topBottomRemover;
+
+                float4 gradient = lerp(_ColorA, _ColorB, i.uv.y);
                 
-                return t.xxxx;
+                return gradient * waves;
                 //float t  = abs(frac(i.uv.x * 5) * 2 -1);
                 //float t = saturate(InverseLerp(_ColorStart, _ColorEnd, i.uv.x));
                 //Lerp

@@ -13,11 +13,11 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-44359
+33453
 Successfully changed project path to: /home/capela/Documents/Tafe Unity/Shader 2022.1
 /home/capela/Documents/Tafe Unity/Shader 2022.1
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 23.08 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 17.18 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.2f1 (068178b99f32)
 [Subsystems] Discovering subsystems at path /home/capela/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
@@ -25,7 +25,7 @@ Initialize engine version: 2020.2.2f1 (068178b99f32)
 GLX Extensions: GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_import_context GLX_SGI_video_sync GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_texture_from_pixmap GLX_EXT_framebuffer_sRGB GLX_NV_copy_image GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_no_error GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_NV_robustness_video_memory_purge GLX_NV_multigpu_context 
 Renderer: NVIDIA GeForce RTX 3080 Laptop GPU/PCIe/SSE2
 Vendor:   NVIDIA Corporation
-Version:  4.5.0 NVIDIA 470.86
+Version:  4.5.0 NVIDIA 510.54
 GLES:     0
  GL_AMD_multi_draw_indirect GL_AMD_seamless_cubemap_per_texture GL_AMD_vertex_shader_viewport_index GL_AMD_vertex_shader_layer GL_ARB_arrays_of_arrays GL_ARB_base_instance GL_ARB_bindless_texture GL_ARB_blend_func_extended GL_ARB_buffer_storage GL_ARB_clear_buffer_object GL_ARB_clear_texture GL_ARB_clip_control GL_ARB_color_buffer_float GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_compute_shader GL_ARB_compute_variable_group_size GL_ARB_conditional_render_inverted GL_ARB_copy_buffer GL_ARB_copy_image GL_ARB_cull_distance GL_ARB_debug_output GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_depth_texture GL_ARB_derivative_control GL_ARB_direct_state_access GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_indirect GL_ARB_draw_elements_base_vertex GL_ARB_draw_instanced GL_ARB_enhanced_layouts GL_ARB_ES2_compatibility GL_ARB_ES3_compatibility GL_ARB_ES3_1_compatibility GL_ARB_ES3_2_compatibility GL_ARB_explicit_attrib_location GL_ARB_explicit_uniform_location GL_ARB_fragmen
 t_coord_conventions GL_ARB_fragment_layer_viewport GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_fragment_shader_interlock GL_ARB_framebuffer_no_attachments GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_geometry_shader4 GL_ARB_get_program_binary GL_ARB_get_texture_sub_image GL_ARB_gl_spirv GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_gpu_shader_int64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_imaging GL_ARB_indirect_parameters GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_internalformat_query2 GL_ARB_invalidate_subdata GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multi_bind GL_ARB_multi_draw_indirect GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_occlusion_query2 GL_ARB_parallel_shader_compile GL_ARB_pipeline_statistics_query GL_ARB_pixel_buffer_object GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_polygon_offset_clamp GL_ARB_post_depth_coverage GL_ARB_program_interface_query GL_ARB_provoki
@@ -38,182 +38,301 @@ blend_equation_advanced_coherent GL_NVX_blend_equation_advanced_multi_draw_buffe
 der_passthrough GL_NV_gpu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_memory_attachment GL_NV_mesh_shader GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_path_rendering_shared_edge GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_primitive_shading_rate GL_NV_query_resource GL_NV_query_resource_tag GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_representative_fragment_test GL_NV_sample_locations GL_NV_sample_mask_override_coverage GL_NV_scissor_exclusive GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_atomic_float64 GL_NV_shader_atomic_fp16_vector GL_NV_shader_atomic_int64 GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_shader_subgroup_par
 titioned GL_NV_shader_texture_footprint GL_NV_shading_rate_image GL_NV_stereo_view_rendering GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_dirty_tile_map GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_rectangle_compressed GL_NV_texture_shader GL_NV_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_vdpau_interop GL_NV_vdpau_interop2 GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_viewport_array2 GL_NV_viewport_swizzle GL_NVX_conditional_render GL_NV_gpu_multicast GL_NVX_progress_fence GL_NVX_gpu_memory_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent 
 GL_OVR_multiview GL_OVR_multiview2 GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
-OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle -1416890264
+OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle 1947376904
 Initialize mono
 Mono path[0] = '/home/capela/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Managed'
 Mono path[1] = '/home/capela/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/home/capela/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56504
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56354
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /home/capela/Unity/Hub/Editor/2020.2.2f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.001298 seconds.
+Registered in 0.000797 seconds.
 Native extension for LinuxStandalone target not found
-Refreshing native plugins compatible for Editor in 16.94 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 15.59 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.860 seconds
+- Completed reload, in  0.783 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000300 seconds.
+Registered in 0.000338 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
-Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.611 seconds
+- Completed reload, in  0.565 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
-Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.16 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1101 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 51.6 MB.
+System memory in use before: 51.7 MB.
 System memory in use after: 51.7 MB.
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1546.
-Total: 2.191871 ms (FindLiveObjects: 0.122948 ms CreateObjectMapping: 0.031415 ms MarkObjects: 1.902151 ms  DeleteObjects: 0.133982 ms)
+Total: 5.305689 ms (FindLiveObjects: 0.155905 ms CreateObjectMapping: 0.036530 ms MarkObjects: 4.964655 ms  DeleteObjects: 0.145826 ms)
 
 ========================================================================
 Received Import Request.
   path: Assets/Shaders/Unlit_TestShader.mat
   artifactKey: Guid(3f6b7271812c386e89e374f862000d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/Unlit_TestShader.mat using Guid(3f6b7271812c386e89e374f862000d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e613f93de6b76a28cabb7d1f64e05227') in 0.074691 seconds
-  Import took 0.077519 seconds .
+Start importing Assets/Shaders/Unlit_TestShader.mat using Guid(3f6b7271812c386e89e374f862000d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a1915da1d9eef32c41c778f2736dff7') in 0.078652 seconds
+  Import took 0.081240 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2043.719478 seconds.
+  Time since last request: 139.998294 seconds.
   path: Assets/Shaders/TestShader.shader
   artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f7ce361f1988d2fdcd1c14e868d6cdb') in 0.000691 seconds
-  Import took 0.002336 seconds .
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7998367eebd09eb87530106284cb1708') in 0.000749 seconds
+  Import took 0.002397 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001939 seconds.
+  Time since last request: 0.027556 seconds.
   path: Assets/Shaders/TestShader.shader
   artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f7ce361f1988d2fdcd1c14e868d6cdb') in 0.000621 seconds
-  Import took 0.002037 seconds .
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7998367eebd09eb87530106284cb1708') in 0.000598 seconds
+  Import took 0.002519 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.874955 seconds.
+  Time since last request: 68.321285 seconds.
   path: Assets/Shaders/TestShader.shader
   artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c4ae0cb878388973ce2f6854a880efa') in 0.000677 seconds
-  Import took 0.002168 seconds .
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37bc1091e8407ca60389806be1e53316') in 0.000800 seconds
+  Import took 0.002922 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000182 seconds.
+  Time since last request: 0.000243 seconds.
   path: Assets/Shaders/TestShader.shader
   artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c4ae0cb878388973ce2f6854a880efa') in 0.000508 seconds
-  Import took 0.001727 seconds .
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37bc1091e8407ca60389806be1e53316') in 0.000744 seconds
+  Import took 0.002385 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 162.210086 seconds.
+  Time since last request: 13.369224 seconds.
   path: Assets/Shaders/TestShader.shader
   artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4115228f76af30bd1c11bfa2b052e62') in 0.000848 seconds
-  Import took 0.002431 seconds .
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10f8d59984a960cd6a65fc07d7e80010') in 0.001637 seconds
+  Import took 0.003504 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2851.823120 seconds.
+  Time since last request: 607.149819 seconds.
   path: Assets/Shaders/TestShader.shader
   artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbef8a2bd152192744d508718849ada9') in 0.000704 seconds
-  Import took 0.002316 seconds .
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f547f3e156ac4c651fdd459a4bc0a5f7') in 0.000920 seconds
+  Import took 0.002793 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000633 seconds.
+  Time since last request: 27.002441 seconds.
   path: Assets/Shaders/TestShader.shader
   artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbef8a2bd152192744d508718849ada9') in 0.000528 seconds
-  Import took 0.001963 seconds .
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a113146aeb955ab982bf8c6c36ac307') in 0.000980 seconds
+  Import took 0.002749 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.943129 seconds.
+  Time since last request: 0.000167 seconds.
   path: Assets/Shaders/TestShader.shader
   artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80138fab56e871c06f3668d51219c107') in 0.000653 seconds
-  Import took 0.002340 seconds .
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a113146aeb955ab982bf8c6c36ac307') in 0.000709 seconds
+  Import took 0.001842 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 44.218211 seconds.
+  Time since last request: 60.256577 seconds.
   path: Assets/Shaders/TestShader.shader
   artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cc8a7acf24845c2420e925f3601c928') in 0.000632 seconds
-  Import took 0.002106 seconds .
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cadf2b47e9d5fa693af2d64259e6b08') in 0.000797 seconds
+  Import took 0.002785 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 287.337549 seconds.
+  Time since last request: 0.000345 seconds.
   path: Assets/Shaders/TestShader.shader
   artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75e6155434d3baed4033d8336d6ced99') in 0.001308 seconds
-  Import took 0.003772 seconds .
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cadf2b47e9d5fa693af2d64259e6b08') in 0.000722 seconds
+  Import took 0.002393 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 28.918694 seconds.
+  Time since last request: 21.132441 seconds.
   path: Assets/Shaders/TestShader.shader
   artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '950aad388f0cf2a656ee2513aa3b467f') in 0.001052 seconds
-  Import took 0.003144 seconds .
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e25b858d6f67b4d7272c85bf468b4d1f') in 0.000660 seconds
+  Import took 0.002745 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.089549 seconds.
+  Time since last request: 6.336874 seconds.
   path: Assets/Shaders/TestShader.shader
   artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b8b9a07cdf749537b7743c8cbf1125') in 0.000908 seconds
-  Import took 0.002365 seconds .
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8b3b5d4c486a9bb4379734e3ccb243e') in 0.000865 seconds
+  Import took 0.002950 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.249240 seconds.
+  Time since last request: 154.852851 seconds.
   path: Assets/Shaders/TestShader.shader
   artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0cd47693d114e1812a4c191092e7ed7') in 0.000645 seconds
-  Import took 0.002430 seconds .
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ed96a648003f9462f627d38a1bc89d7') in 0.000800 seconds
+  Import took 0.002993 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.147483 seconds.
+  Time since last request: 12.473751 seconds.
   path: Assets/Shaders/TestShader.shader
   artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e283cc89d0d05b0799f3b33ff787dab5') in 0.000657 seconds
-  Import took 0.002140 seconds .
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb6a438a9cf63e1c044d288328a64b9e') in 0.001006 seconds
+  Import took 0.002660 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 25.116441 seconds.
+  Time since last request: 41.613593 seconds.
   path: Assets/Shaders/TestShader.shader
   artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a1e48477d2e6315b43d14cf269862b8') in 0.000736 seconds
-  Import took 0.002638 seconds .
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '906d02cb957406c89495d0f296404f28') in 0.000700 seconds
+  Import took 0.002378 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.482108 seconds.
+  Time since last request: 57.461528 seconds.
   path: Assets/Shaders/TestShader.shader
   artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '496efa5e362a2343b541c9f0c91051a1') in 0.000837 seconds
-  Import took 0.002357 seconds .
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '674f9aa9c739f49cc65317e7c067ea70') in 0.000683 seconds
+  Import took 0.002654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.621461 seconds.
+  path: Assets/Shaders/TestShader.shader
+  artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11ef164c4459f3362b0015dd11d38d84') in 0.001329 seconds
+  Import took 0.003585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.262413 seconds.
+  path: Assets/Shaders/TestShader.shader
+  artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c7f681d4b85cb251704146184b4f5e3') in 0.001207 seconds
+  Import took 0.003338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.845418 seconds.
+  path: Assets/Shaders/TestShader.shader
+  artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b21a69afca2a6778619724f021dd28d') in 0.001124 seconds
+  Import took 0.003093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.245017 seconds.
+  path: Assets/Shaders/TestShader.shader
+  artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34ba0c6d19303dd6219706cb94c3a499') in 0.001009 seconds
+  Import took 0.003138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.702644 seconds.
+  path: Assets/Shaders/TestShader.shader
+  artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80408bbd1fc7818b75524953c915b776') in 0.000924 seconds
+  Import took 0.002609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.822997 seconds.
+  path: Assets/Shaders/TestShader.shader
+  artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '793bc726153524551685f76fa16afaba') in 0.000651 seconds
+  Import took 0.002344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Shaders/TestShader.shader
+  artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '793bc726153524551685f76fa16afaba') in 0.000597 seconds
+  Import took 0.002123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.518795 seconds.
+  path: Assets/Shaders/TestShader.shader
+  artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54bbc04feabb9e896be2d2bce9e4fe71') in 0.000801 seconds
+  Import took 0.002585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.071977 seconds.
+  path: Assets/Shaders/TestShader.shader
+  artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a94d77917e00abac6bf6d4d51e6c578') in 0.000630 seconds
+  Import took 0.002356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Shaders/TestShader.shader
+  artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a94d77917e00abac6bf6d4d51e6c578') in 0.000845 seconds
+  Import took 0.002278 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 79.385404 seconds.
+  path: Assets/Shaders/TestShader.shader
+  artifactKey: Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/TestShader.shader using Guid(2cc569bcbc5f45e3f8ab0d18c183b703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14a1390a233cb75166809390956b3a09') in 0.000992 seconds
+  Import took 0.003691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1036.466656 seconds.
+  path: Assets/Shaders/Unlit_TestShader.mat
+  artifactKey: Guid(3f6b7271812c386e89e374f862000d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/Unlit_TestShader.mat using Guid(3f6b7271812c386e89e374f862000d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd46762dfbfef30ce0a096f00ed24c0c8') in 0.009498 seconds
+  Import took 0.011942 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000381 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.829 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1095 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 53.5 MB.
+System memory in use after: 53.6 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1588.
+Total: 2.259986 ms (FindLiveObjects: 0.133294 ms CreateObjectMapping: 0.030614 ms MarkObjects: 2.031983 ms  DeleteObjects: 0.062657 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
