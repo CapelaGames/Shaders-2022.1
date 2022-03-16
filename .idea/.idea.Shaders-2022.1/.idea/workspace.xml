@@ -9,6 +9,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity 2020.3.25f1/Editor/Data/CGIncludes/UnityShaderUtilities.cginc" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scannable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -57,6 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1646783295266</updated>
       <workItem from="1646783295268" duration="7334000" />
+      <workItem from="1647388135407" duration="7783000" />
     </task>
     <servers />
   </component>
