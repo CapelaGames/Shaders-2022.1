@@ -3,7 +3,7 @@ Shader "Unlit/SenatorLambert"
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
-        _Gloss("Gloss", range(0,1)) = 1
+        _Gloss("Gloss", float) = 1
     }
     SubShader
     {
@@ -17,7 +17,8 @@ Shader "Unlit/SenatorLambert"
 
             #include "UnityCG.cginc"
             #include "Lighting.cginc"
-            //#include "AutoLight.cginc"
+            #include "AutoLight.cginc"
+            
             struct appdata
             {
                 float4 vertex : POSITION;
@@ -53,7 +54,7 @@ Shader "Unlit/SenatorLambert"
                 //Directional lights: (world space direction, 0). Other lights: (world space position, 1).
                  float3 L = _WorldSpaceLightPos0.xyz;
                 //lambert
-                float3 diffuseLight = saturate( dot(N,L)) * _LightColor0;//.xyz
+                float3 diffuseLight = saturate( dot(N,L)) * _LightColor0.xyz;
 
                 float3 V = normalize(_WorldSpaceCameraPos - i.worldPosition);
                 float3 R = reflect(-L, N);
