@@ -3,7 +3,7 @@ Shader "Unlit/SenatorLambert"
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
-        _Gloss("Gloss", float) = 1
+        _Gloss("Gloss", range(0,1)) = 1
     }
     SubShader
     {
@@ -50,19 +50,36 @@ Shader "Unlit/SenatorLambert"
 
             fixed4 frag (v2f i) : SV_Target
             {
-                float3 N = i.normal; //normalise this
+                float3 N = normalize(i.normal); //normalise this
                 //Directional lights: (world space direction, 0). Other lights: (world space position, 1).
                  float3 L = _WorldSpaceLightPos0.xyz;
+                 float attenuation = LIGHT_ATTENUATION(i);
                 //lambert
-                float3 diffuseLight = saturate( dot(N,L)) * _LightColor0.xyz;
+                float3 lambert = saturate(dot(N, L));
+                float3 diffuseLight = (lambert * attenuation) * _LightColor0.xyz;
 
                 float3 V = normalize(_WorldSpaceCameraPos - i.worldPosition);
-                float3 R = reflect(-L, N);
+                //float3 R = reflect(-L, N);
                 //phong
-                float3  specularLight = saturate(dot(V,R));
-                specularLight = pow(specularLight, _Gloss);
+                //float3  specularLight = saturate(dot(V,R));
+                //specularLight = pow(specularLight, _Gloss);
+                //return  float4( specularLight.xxx ,1);
 
-                return  float4( specularLight.xxx ,1);
+
+                //blinn phong
+
+                float3 H = normalize(L + V);
+                float3 specularLight = saturate(dot(H, N)) * (lambert > 0);
+                float specularExponent = exp2(_Gloss * 11);
+                specularLight = pow(specularLight, specularExponent) * _Gloss * attenuation;
+                specularLight *= _LightColor0.rgb;
+
+                
+
+                float fresnel = (1 - dot(V, N)) *-(cos(_Time.y * 4)) * 0.25 + 0.25;
+
+
+                return float4(diffuseLight + specularLight, 1) +fresnel;
             }
             ENDCG
         }
