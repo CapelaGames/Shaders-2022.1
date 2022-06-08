@@ -1112,3 +1112,4 @@ Received Import Request.
 Start importing Assets/Shaders/Water/flow-speed-noise.png using Guid(bf214d7168c0a1f49aad49ad0a4b2900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaf7167d0de623fa129864841b4b5b76') in 0.089508 seconds 
   Import took 0.098047 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
